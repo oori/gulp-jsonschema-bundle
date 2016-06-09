@@ -1,0 +1,40 @@
+{
+  "name": "gulp-jsonschema-bundle",
+  "version": "0.0.1",
+  "description": "Dereference json schema",
+  "license": "MIT",
+  "repository": "oori/gulp-jsonschema-bundle",
+  "author": {
+    "name": "oori",
+    "email": "o@pluggable.biz",
+    "url": "github.com/oori/gulp-jsonschema-bundle"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "jsonschema",
+    "json-schema",
+    "$ref",
+    "reference",
+    "dereference",
+    "bundle"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "json-schema-ref-parser": "^3.1.2",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "tv4": "^1.2.7",
+    "xo": "^0.14.0"
+  }
+}

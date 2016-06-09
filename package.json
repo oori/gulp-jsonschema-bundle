@@ -1,7 +1,7 @@
 {
   "name": "gulp-jsonschema-bundle",
   "version": "0.0.1",
-  "description": "Dereference json schema",
+  "description": "Bundle json schema",
   "license": "MIT",
   "repository": "oori/gulp-jsonschema-bundle",
   "author": {

@@ -1,4 +1,10 @@
-# gulp-jsonschema-bundle [![Build Status](https://travis-ci.org/oori/gulp-jsonschema-bundle.svg?branch=master)](https://travis-ci.org/oori/gulp-jsonschema-bundle)
+# gulp-jsonschema-bundle
+
+[![Build Status](https://travis-ci.org/oori/gulp-jsonschema-bundle.svg?branch=master)](https://travis-ci.org/oori/gulp-jsonschema-bundle)
+[![Dependencies](https://david-dm.org/oori/gulp-jsonschema-bundle.svg)](https://david-dm.org/oori/gulp-jsonschema-bundle)
+[![Inline docs](http://inch-ci.org/github/oori/gulp-jsonschema-bundle.svg?branch=master)](http://inch-ci.org/github/oori/gulp-jsonschema-bundle)
+[![npm](http://img.shields.io/npm/v/gulp-jsonschema-bundle.svg)](https://www.npmjs.com/package/gulp-jsonschema-bundle)
+[![License](https://img.shields.io/npm/l/gulp-jsonschema-bundle.svg)](LICENSE)
 
 > Gulp plugin to bundle external $ref references (*file+http*) into a single json schema
 

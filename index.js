@@ -1,19 +1,18 @@
 'use strict';
-var gutil = require('gulp-util');
-var through = require('through2');
-var parser = require('json-schema-ref-parser');
+const gutil = require('gulp-util');
+const through = require('through2');
+const parser = require('json-schema-ref-parser');
 
 /**
  * Dereference a jsonschema
  */
 function bundler(file, opts, cb) {
-	var _this = this;
-	parser.bundle(file.path, opts, function (err, schema) {
+	parser.bundle(file.path, opts, (err, schema) => {
 		if (err) {
-			_this.emit('error', new gutil.PluginError('gulp-jsonschema-bundle', err, {fileName: file.path}));
+			this.emit('error', new gutil.PluginError('gulp-jsonschema-bundle', err, {fileName: file.path}));
 		} else {
 			file.contents = Buffer.from(JSON.stringify(schema));
-			_this.push(file);
+			this.push(file);
 		}
 		cb();
 	});

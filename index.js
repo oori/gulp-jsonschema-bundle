@@ -12,7 +12,7 @@ function bundler(file, opts, cb) {
 		if (err) {
 			_this.emit('error', new gutil.PluginError('gulp-jsonschema-bundle', err, {fileName: file.path}));
 		} else {
-			file.contents = new Buffer(JSON.stringify(schema));
+			file.contents = Buffer.from(JSON.stringify(schema));
 			_this.push(file);
 		}
 		cb();
